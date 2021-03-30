@@ -16,7 +16,8 @@ https://cros-updates-serving.appspot.com/
 
 "grunt" is the image to use for AMD Stoney Ridge.
 
-## Make USB flash drive to bootable
+## Install Chrome OS via USB
+### Make USB flash drive to bootable
 Extract Brunch Framework and Put recovery image(bin)
 
 `cd /brunch[tab]`   
@@ -27,15 +28,23 @@ Give an example of /dev/sdc as flash drive..
 
 `sudo bash chromeos-install.sh -src [recovery image.bin] -dst /dev/sdc`   
 
-Reboot... go to boot menu and select flash drive
+### Install
+go to boot menu and select flash drive
 
 When it boots, `CTRL + ALT + T`   
 
 Type `sudo chromeos-install -dst [Target, For example.. /dev/sdb]`   
 
-## Make img files
-Extract Brunch Framework and Put recovery image(bin)
+## Make Multiboot
+Script made by shrikant2002
+https://raw.githubusercontent.com/shrikant2002/ChromeOS/master/multi_install.sh
+
+### Make img files
+Extract Brunch Framework and Put recovery image(bin) and Multi_install.sh
 
 `cd /brunch[tab]`   
 
-`sudo bash chromeos-install.sh -src [recovery image.bin] -dst chromeos.img`   
+Script will only recognize the recovery named as `rammus_recovery.bin`     
+So rename ur Recovery image `rammus_recovery.bin`     
+
+`sudo sh multi_install.sh`   
