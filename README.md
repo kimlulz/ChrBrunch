@@ -27,6 +27,12 @@ Give an example of /dev/sdc as flash drive..
 
 `sudo bash chromeos-install.sh -src [recovery image.bin] -dst /dev/sdc`   
 
+Reboot... go to boot menu and select flash drive
+
+When it boots, `CTRL + ALT + T`   
+
+Type `sudo chromeos-install -dst [Target, For example.. /dev/sdb]`   
+
 ## Make img files
 Extract Brunch Framework and Put recovery image(bin)
 
