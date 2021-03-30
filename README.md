@@ -39,7 +39,6 @@ Type `sudo chromeos-install -dst [Target, For example.. /dev/sdb]`
 Script made by shrikant2002
 https://raw.githubusercontent.com/shrikant2002/ChromeOS/master/multi_install.sh
 
-### Make img files
 Extract Brunch Framework and Put recovery image(bin) and Multi_install.sh
 
 `cd /brunch[tab]`   
