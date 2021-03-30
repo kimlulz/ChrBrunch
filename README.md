@@ -48,3 +48,10 @@ Script will only recognize the recovery named as `rammus_recovery.bin`
 So rename ur Recovery image `rammus_recovery.bin`     
 
 `sudo sh multi_install.sh`   
+
+## Just need img file only
+Extract Brunch Framework and Put recovery image(bin)
+
+`cd /brunch[tab]`   
+
+`sudo bash chromeos-install.sh -src [recovery image.bin] -dst [name.img ex. chromeos.img]`   
