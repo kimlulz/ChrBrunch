@@ -10,9 +10,11 @@ https://cros-updates-serving.appspot.com/
 
 "rammus" is the recommended image for devices with 4th generation Intel CPU and newer.
 
+"volteer" is the recommended image for devices with 11th generation Intel CPU.
+
 "samus" is the recommended image for devices with 3rd generation Intel CPU and older.
 
-"zork" is the image to use for AMD Ryzen 3XXX. (Higher Gen NOT SUPPORT YET)
+"zork" is the image to use for AMD Ryzen(renoir support)
 
 "grunt" is the image to use for AMD Stoney Ridge.
 
