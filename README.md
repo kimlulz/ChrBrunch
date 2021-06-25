@@ -8,13 +8,13 @@ https://github.com/sebanc/brunch/releases
 ### Chrome OS recovery image
 https://cros-updates-serving.appspot.com/
 
-"volteer" is the recommended image for devices with 11th generation Intel CPU.
+"volteer" is the recommended image for devices with 11th generation Intel CPU. (need kernel 5.10)
 
 "rammus" is the recommended image for devices with 4th generation Intel CPU and newer.
 
 "samus" is the recommended image for devices with 3rd generation Intel CPU and older.
 
-"zork" is the image to use for AMD Ryzen(renoir support)
+"zork" is the image to use for AMD Ryzen(4*** Model need kernel 5.10)
 
 "grunt" is the image to use for AMD Stoney Ridge.
 
