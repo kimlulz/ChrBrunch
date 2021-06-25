@@ -30,25 +30,12 @@ Give an example of /dev/sdc as flash drive..
 
 `sudo bash chromeos-install.sh -src [recovery image.bin] -dst /dev/sdc`   
 
-### Install
+#### Install
 go to boot menu and select flash drive
 
 When it boots, `CTRL + ALT + T`   
 
 Type `sudo chromeos-install -dst [Target, For example.. /dev/sdb]`   
-
-## Make Multiboot
-Script made by shrikant2002
-https://raw.githubusercontent.com/shrikant2002/ChromeOS/master/multi_install.sh
-
-Extract Brunch Framework and Put recovery image(bin) and Multi_install.sh
-
-`cd /brunch[tab]`   
-
-Script will only recognize the recovery named as `rammus_recovery.bin`     
-So rename ur Recovery image `rammus_recovery.bin`     
-
-`sudo sh multi_install.sh`   
 
 ## Just need img file only
 Extract Brunch Framework and Put recovery image(bin)
@@ -56,3 +43,12 @@ Extract Brunch Framework and Put recovery image(bin)
 `cd /brunch[tab]`   
 
 `sudo bash chromeos-install.sh -src [recovery image.bin] -dst [name.img ex. chromeos.img]`   
+
+### Make partition bootable via img and grub entry
+
+make partition   
+mount /dev/sdXY /mnt    
+`sudo bash chromeos-install.sh -src [recovery image.bin] -dst /mnt/chromeos.img`   
+Add grub entry via grub customizer
+
+
