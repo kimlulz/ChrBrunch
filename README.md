@@ -59,7 +59,7 @@ To boot directly from this image file, add the lines between stars to either:
 menuentry "ChromeOS" --class "brunch" {
 	rmmod tpm
 	img_part=/dev/sdxY
-	img_path=/mnt/chrome.img
+	img_path=/chromeos.img
 	search --no-floppy --set=root --file $img_path
 	loopback loop $img_path
 	linux (loop,7)/kernel boot=local noresume noswap loglevel=7 options= \
@@ -71,7 +71,7 @@ menuentry "ChromeOS" --class "brunch" {
 menuentry "ChromeOS (debug mode)" --class "brunch-debug" {
 	rmmod tpm
 	img_part=/dev/sdxY
-	img_path=/mnt/chrome.img
+	img_path=/chromeos.img
 	search --no-floppy --set=root --file $img_path
 	loopback loop $img_path
 	linux (loop,7)/kernel boot=local noresume noswap loglevel=7 options= \
