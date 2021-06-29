@@ -45,8 +45,8 @@ Extract Brunch Framework and Put recovery image(bin)
 `sudo bash chromeos-install.sh -src [recovery image.bin] -dst [name.img ex. chromeos.img]`   
 
 ### Make partition bootable via img and grub entry
-make partition   
-mount /dev/sdXY /mnt    
+make partition as ntfs or ext4   
+`mount /dev/sdXY /mnt`    
 `sudo bash chromeos-install.sh -src [recovery image.bin] -dst /mnt/chromeos.img`   
 When it finished,
 ```
