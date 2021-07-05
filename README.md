@@ -89,7 +89,8 @@ If you use this command, remember that your grub configuration will be in the fi
 
 ```
 
-type below command `echo -e '#!/bin/sh\nexec tail -n +3 $0\n\n\n\n'"$(sed '1,4d;$d' $(realpath "chrome.img").grub.txt)" | sudo tee /etc/grub.d/99_brunch && sudo chmod 0755 /etc/grub.d/99_brunch && sudo update-grub` to add grub entry.    
+type below command     
+`echo -e '#!/bin/sh\nexec tail -n +3 $0\n\n\n\n'"$(sed '1,4d;$d' $(realpath "chrome.img").grub.txt)" | sudo tee /etc/grub.d/99_brunch && sudo chmod 0755 /etc/grub.d/99_brunch && sudo update-grub` to add grub entry.    
 or use grub customizer for add manually via /mnt/chrome.img.grub.txt
 
 
